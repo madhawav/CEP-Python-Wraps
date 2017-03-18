@@ -1,6 +1,6 @@
-Note: This code is work in progress. Refer known_issues.md for work in progress improvements.
+Note: This code is work in progress. Refer known_issues.md.
 
-# Pre-requesites
+# Pre-requisites
 - Python 3.x
 - Py4J (`sudo pip install py4j`)
 

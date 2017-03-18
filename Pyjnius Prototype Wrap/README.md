@@ -1,6 +1,6 @@
 Note: Pyjnius Wrapper only works with Python 2.7.x as of now.
 
-# Pre-requesites
+# Pre-requisites
 - Python 2.7.x
 - Cython (`sudo apt-get install cython`)
 - Pyjnius (build from source as explained below)
