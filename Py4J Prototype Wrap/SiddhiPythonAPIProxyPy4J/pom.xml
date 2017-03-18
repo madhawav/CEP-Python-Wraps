@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.wso2.siddhi</groupId>
-    <artifactId>siddhi-python-api-proxy</artifactId>
+    <artifactId>siddhi-python-api-proxy-py4j</artifactId>
     <version>4.0-SNAPSHOT</version>
 
     <dependencies>
@@ -20,7 +20,13 @@
             <version>4.0.0-SNAPSHOT</version>
         </dependency>
 
+        <dependency>
+            <groupId>net.sf.py4j</groupId>
+            <artifactId>py4j</artifactId>
+            <version>0.10.4</version>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -32,7 +38,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-
+                            <mainClass>org.wso2.siddhi.EntryPoint</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -57,10 +63,41 @@
                     </execution>
                 </executions>
             </plugin>
+
+
         </plugins>
+
     </build>
 
+    <profiles>
+        <profile>
+            <id>run-code</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>1.1.1</version>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>org.wso2.siddhi.EntryPoint</mainClass>
+
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <repositories>
+
         <repository>
             <id>wso2-nexus</id>
             <name>WSO2 internal Repository</name>
@@ -106,7 +143,6 @@
             </snapshots>
         </repository>
 
-        <!--todo is this necessary ?-->
         <repository>
             <id>sonatype.releases</id>
             <url>https://oss.sonatype.org/content/repositories/releases/</url>
@@ -152,5 +188,6 @@
         </pluginRepository>
 
     </pluginRepositories>
+
 
 </project>
