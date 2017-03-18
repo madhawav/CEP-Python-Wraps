@@ -10,6 +10,8 @@ Note: Pyjnius Wrapper only works with Python 2.7.x as of now.
 2) Download Source from Github Repo - https://github.com/kivy/pyjnius (master branch)
 3) Goto source directory and run make.
 4) Goto Source directory and run setup.py ( `sudo python setup.py install` )
+
+Pyjnius Documentation - https://pyjnius.readthedocs.io/en/latest/installation.html
  
 # Running the code
 1) Clone this repository.

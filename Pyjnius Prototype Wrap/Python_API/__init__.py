@@ -3,7 +3,7 @@ logging.basicConfig(level=logging.INFO)
 
 #Add Java library to class path of jvm
 import jnius_config
-jnius_config.set_classpath('.','../SiddhiPythonApiProxy/out/artifacts/SiddhiPythonApiProxy_jar/*')
+jnius_config.set_classpath('.','./SiddhiPythonApiProxy/target/lib/*','./SiddhiPythonApiProxy/target/*')
 
 logging.info("Classpath Configured")
 

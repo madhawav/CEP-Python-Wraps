@@ -27,6 +27,8 @@
 
 ## Plugin-specific files:
 
+/target/*
+
 # IntelliJ
 /out/
 
