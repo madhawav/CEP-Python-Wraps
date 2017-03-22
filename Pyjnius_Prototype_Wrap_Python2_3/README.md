@@ -9,7 +9,7 @@ Note: Pyjnius Wrapper only works with Python 2.7.x as of now.
 1) Make sure Cython is already installed since it is a pre-requisite to Pyjnius
 2) Download Source from Github Repo - https://github.com/kivy/pyjnius (master branch)
 3) Goto source directory and run make.
-4) Goto Source directory and run setup.py ( `sudo python setup.py install` )
+4) Goto Source directory and run setup.py ( `sudo python2 setup.py install` or `sudo python3 setup.py install`)
 
 NOTE: if your doing a new build from same source, remember to delete pyjnius/jnius/jnius.c. 
 Deleting the above file is necessary if your doing the new build for a different version of python.
@@ -20,5 +20,5 @@ Pyjnius Documentation - https://pyjnius.readthedocs.io/en/latest/installation.ht
 1) Clone this repository.
 2) Goto `Pyjnius_Prototype_Wrap_Python2_3/SiddhiPythonApiProxy/` and run `mvn install`
 3) Copy `pyjnius.jar` file from `[pyjnius_source_directory]/build` to `Pyjnius_Prototype_Wrap_Python2_3/SiddhiPythonApiProxy/target/lib/`
-4) Run `/Pyjnius_Prototype_Wrap_Python2_3/TestApp.py` ( `python TestApp.py`)
+4) Run `/Pyjnius_Prototype_Wrap_Python2_3/TestApp.py` ( `python2 TestApp.py` or `python3 TestApp.py`)
 
