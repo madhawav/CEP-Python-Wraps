@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: siddhi-annotations-4.0.0-20170317.004822-7.jar quartz-2.1.
+ 1.wso2v1.jar classindex-3.4.jar slf4j-api-1.7.12.jar gson-2.5.jar sid
+ dhi-query-compiler-4.0.0-20170317.004825-7.jar guava-19.0.jar metrics
+ -core-3.1.0.jar mvel2-2.2.1.Final.jar log4j-1.2.17.wso2v1.jar siddhi-
+ core-4.0.0-20170317.004822-7.jar json-smart-1.2.jar disruptor-3.3.2.w
+ so2v2.jar org.osgi.core-6.0.0.jar log4j-1.2.17.jar json-path-0.9.1.ja
+ r antlr4-runtime-4.5.1.jar quartz-2.1.1.jar c3p0-0.9.1.1.jar slf4j-si
+ mple-1.7.12.jar org.eclipse.osgi.services-3.3.100.v20120522-1822.jar 
+ siddhi-query-api-4.0.0-20170317.004825-7.jar
+Main-Class: 
+
